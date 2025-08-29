@@ -23,5 +23,4 @@
 - `lsmem` → show memory infomation
 ## Sudo Commands
 - `sudo`→ gives root security privileges
-- `sudo adduser [username] → creates new user [username]
-
+- `sudo adduser [username]` → creates new user [username]
