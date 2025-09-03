@@ -1,4 +1,4 @@
-# Week 1: Linux Basics
+#  Linux Basics
 ## Navigation
 - `pwd` → shows current directory
 - `ls -a` → Show all (including hidden)
@@ -24,10 +24,6 @@
 - `uname -a` → show system and kernel
 - `lscpu` → show cpu information
 - `lsmem` → show memory infomation
-## Permissions & Users
-- `sudo`→ run with root privileges
-- `sudo adduser [username]` → creates new user [username]
-- `sudo apt install [software]` → installs [software]
 ## Useful Shortcuts
 - `CTRL + C` → stop current command
 - `CTRL + SHIFT + C\V` → copy and paste inside terminal
@@ -41,3 +37,19 @@
 - `:%s/old/new` → replaces string name with new name
 - `:wq` → save changes
 - `:q!` → discard changes
+## Permissions & Users
+- `sudo`→ run with root privileges
+- `sudo adduser [username]` → creates new user [username]
+- `sudo apt install [software]` → installs [software]
+## Managing Users and their permissions
+- `sudo passwd [username]` → change password of a user
+- `su - [username]` → login as username
+- `sudo groupadd [groupname]` → create new group
+- `groups` → shows the groups current user belongs to
+- `groups [username]` → shows [username] groups
+- `sudo usermod <OPTIONS> [username]` → modify a user account
+- `exit` → logout out user to prevous user
+- `sudo gpasswd -d [username][groupname]` → remove user from group
+- `sudo chown [username]:[groupname] <filename>` → changes the user and group ownership
+- `sudo chmod u/g/o+rwx [filename]` → give permisson to user/group/other for a file
+- `sudo chmod u/g/o-rwx [filename]` → remove permisson from user/group/other for a file
